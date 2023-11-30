@@ -270,8 +270,8 @@ li {
     color: rgb(4, 176, 4);
     text-shadow: 1px 1px 5px #0a0, 1px 1px 5px #0a0;
     font-size: 22px !important;
-    margin-left: 2dvh;
-    margin-right: 2dvh;
+    margin-left:1vh;
+    margin-right: 1vh;
 }
 
 hr {
@@ -282,6 +282,15 @@ hr {
 
     .nav-link {
         font-size: 14px !important;
+    }
+  }
+
+  @media only screen and (max-height: 640px) {
+
+    .nav-link {
+        font-size: 14px !important;
+        margin-left:1vh;
+        margin-right: 1vh;
     }
   }
 
