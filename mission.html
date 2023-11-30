@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="js/perfect-scrollbar/css/perfect-scrollbar.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/blocks.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quantico:400&display=swap" rel="stylesheet">
+
+    <title>Microcomputing Society - Everything microprocessor</title>
+    <link rel="pg-require" href="projectdb.pgml">
+    <link rel="pg-require" href="_pginfo/fonts.json">
+    <link rel="pg-require" href="pinegrow.json">
+    <style>
+        #divID {
+            overflow: hidden;
+            width: calc(1024px + 0);
+        }
+
+        #divID:hover {
+            overflow-y: scoll;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="monitor">
+
+            <div class="crt d-flex justify-content-center align-items-end">
+
+                <nav class="navbar navbar-expand bg-transparent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link " href="mission.html">MISSION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <div  class="container align-self-start text-area">
+                    <h2>Mission</h2>
+                    <hr>
+                    <p>In addition to a common interest to help members in pursuing their interests in retro gaming and vintage computing, 
+                    by aligning with the Microcomputing Society, the objectives have now extended to new horizons:</p>
+                    <ul> 
+                    <li>Establishing a permanent display of retro computers and gaming consoles accessible to the public.</li>
+                    <li>Creating an international training institute for microcomputing.</li>
+                    <li>Forging partnerships with foreign institutions sharing similar interests.</li>
+                    <li>Taking an active stance in promoting responsible gaming.</li>
+                </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
+
+    <script>
+        const container = document.querySelector('#text-area');
+
+        const ps = new PerfectScrollbar(container, {
+            wheelSpeed: 2,
+            wheelPropagation: true,
+            maxScrollbarLength: 20
+        });
+        ps.update(container);
+
+    </script>
+
+</body>
+
+</html>
