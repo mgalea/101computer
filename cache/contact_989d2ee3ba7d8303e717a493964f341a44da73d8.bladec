@@ -1,0 +1,13 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('content'); ?>
+
+
+<div  class="container align-self-start text-area text-center">
+ <h2>Get in Touch</h2>
+ <hr>
+ <p>If you wish to know more about our foundation or you would like to donate your old computer equipment, please send us an email on: </p>
+ <a href="mailto:info@101.computer">info@101.computer</a>
+</div>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layouts.master'); } ?>

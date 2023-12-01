@@ -1,0 +1,7 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('content'); ?>
+
+<img height="80%" class="image-fit align-self-center" src="images/ms-logo-pixels.png">
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layouts.master'); } ?>
